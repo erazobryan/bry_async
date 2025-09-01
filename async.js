@@ -9,10 +9,10 @@
 
 
 
-fetch("https://favqs.com/api/qotd")
+fetch("http://api.adviceslip.com/advice")
 .then (Response => Response.json())
 .then (data => {
-    console.log("Here's your advice:", data.slip.qotd);
+    console.log("Here's your advice:", data.slip.advice);
 })
 .catch(error => console.error("Error:", error));
 
